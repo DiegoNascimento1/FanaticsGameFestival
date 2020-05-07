@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Banco_caixa extends CI_Controller {
+class Portal_home extends CI_Controller {
 
     private $_modulo = 'BANCO';
     private $_base   = 'banco_caixa/';
@@ -9,11 +9,6 @@ class Banco_caixa extends CI_Controller {
 
     public function __construct() {
         parent::__construct();
-
-        clienteLogado();
-        nivel_acesso();
-
-        $this->_limitacao = $this->session->userdata('limitacoes');
         
         $this->load->model('Banco_caixa_model', 'Model');
         $this->load->model('Lancamento_model', 'LancamentoModel');
