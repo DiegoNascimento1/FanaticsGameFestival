@@ -1,6 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-Class Portal_home extends CI_Controller {
+Class Portal_blog extends CI_Controller {
 
     private $_modulo = 'Blog';
     private $_base   = 'portal/blog/';

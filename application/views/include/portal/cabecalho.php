@@ -33,7 +33,7 @@
                                             Blog
                                         </a>
                                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <a class="dropdown-item" href="blog.html"> blog</a>
+                                            <a class="dropdown-item" href="<?= base_url('portal_blog')?>"> blog</a>
                                             <a class="dropdown-item" href="single-blog.html">Single blog</a>
                                         </div>
                                     </li>
