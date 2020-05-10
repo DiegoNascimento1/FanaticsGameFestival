@@ -4,3 +4,7 @@
 <script>
  <?= isset($js) ? $js : '' ?>
 </script>
+
+</body>
+
+</html>

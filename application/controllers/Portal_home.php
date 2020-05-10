@@ -3,15 +3,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Portal_home extends CI_Controller {
 
-    private $_modulo = 'BANCO';
-    private $_base   = 'banco_caixa/';
-    private $_limitacao = [];
+    private $_modulo = 'Home';
+    private $_base   = 'portal/home/';
 
     public function __construct() {
         parent::__construct();
         
-        $this->load->model('Banco_caixa_model', 'Model');
-        $this->load->model('Lancamento_model', 'LancamentoModel');
+        // $this->load->model('Banco_caixa_model', 'Model');
+        // $this->load->model('Lancamento_model', 'LancamentoModel');
     }
     
     /**
@@ -21,32 +20,21 @@ class Portal_home extends CI_Controller {
         $dados = [
             '_modulo'      => $this->_modulo,
             '_base'        => $this->_base,
-            '_limitacao'   => $this->_limitacao,
-            'dado'         => FALSE
         ];
-        $filtro = [
-            'fk_empresa' => $this->session->userdata('id_empresa')
-        ];
-        $dados['listaBacen'] = $this->Model->getBacenCombo([], '*', TRUE);
-
-        $id = (int) recuperaCripto($id);
+       
+       
         if ($id) {
-            // $dados['dado']               = $this->Model->getRegistros($filtro);
-            $dados['status']             = TRUE;
-            $dados['dado']               = $this->Model->getById($id);
-            $dados['dado']['id']         = geraCripto($dados['dado']['id']);
-            $dados['dado']['dt_inicio']  = converteData($dados['dado']['dt_inicio']);
-            $dados['dado']['tipo_saldo'] = ($dados['dado']['vl_saldo_inicial'] < 0) ? 'N' : 'P';
+         
             echo json_encode($dados);
             exit;
         }
 
-        $dados['lista'] = $this->Model->getAll($filtro);
+       
 
         $js['js'] = $this->load->view($this->_base . 'js/main.js', $dados, true);
-        $this->load->view('include/cabecalho', $dados);
+        $this->load->view('include/portal/cabecalho', $dados);
         $this->load->view($this->_base . 'index', $dados);
-        $this->load->view('include/rodape', $js);
+        $this->load->view('include/portal/rodape', $js);
     }
 
     /**
