@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Banco_caixa extends CI_Controller {
+class Portal_evento extends CI_Controller {
 
     private $_modulo = 'BANCO';
     private $_base   = 'banco_caixa/';
@@ -10,13 +10,13 @@ class Banco_caixa extends CI_Controller {
     public function __construct() {
         parent::__construct();
 
-        clienteLogado();
-        nivel_acesso();
+        // clienteLogado();
+        // nivel_acesso();
 
-        $this->_limitacao = $this->session->userdata('limitacoes');
+        // $this->_limitacao = $this->session->userdata('limitacoes');
         
-        $this->load->model('Banco_caixa_model', 'Model');
-        $this->load->model('Lancamento_model', 'LancamentoModel');
+        // $this->load->model('Banco_caixa_model', 'Model');
+        // $this->load->model('Lancamento_model', 'LancamentoModel');
     }
     
     /**
@@ -26,25 +26,19 @@ class Banco_caixa extends CI_Controller {
         $dados = [
             '_modulo'      => $this->_modulo,
             '_base'        => $this->_base,
-            '_limitacao'   => $this->_limitacao,
-            'dado'         => FALSE
         ];
-        $filtro = [
-            'fk_empresa' => $this->session->userdata('id_empresa')
-        ];
-        $dados['listaBacen'] = $this->Model->getBacenCombo([], '*', TRUE);
 
-        $id = (int) recuperaCripto($id);
-        if ($id) {
-            // $dados['dado']               = $this->Model->getRegistros($filtro);
-            $dados['status']             = TRUE;
-            $dados['dado']               = $this->Model->getById($id);
-            $dados['dado']['id']         = geraCripto($dados['dado']['id']);
-            $dados['dado']['dt_inicio']  = converteData($dados['dado']['dt_inicio']);
-            $dados['dado']['tipo_saldo'] = ($dados['dado']['vl_saldo_inicial'] < 0) ? 'N' : 'P';
-            echo json_encode($dados);
-            exit;
-        }
+        // $id = (int) recuperaCripto($id);
+        // if ($id) {
+        //     // $dados['dado']               = $this->Model->getRegistros($filtro);
+        //     $dados['status']             = TRUE;
+        //     $dados['dado']               = $this->Model->getById($id);
+        //     $dados['dado']['id']         = geraCripto($dados['dado']['id']);
+        //     $dados['dado']['dt_inicio']  = converteData($dados['dado']['dt_inicio']);
+        //     $dados['dado']['tipo_saldo'] = ($dados['dado']['vl_saldo_inicial'] < 0) ? 'N' : 'P';
+        //     echo json_encode($dados);
+        //     exit;
+        // }
 
         $dados['lista'] = $this->Model->getAll($filtro);
 
