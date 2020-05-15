@@ -262,7 +262,7 @@ h5 {
 
 /* line 129, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_common.scss */
 img {
-  max-width: 100%;
+  max-width: 15%;
 }
 
 /* line 132, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_common.scss */
@@ -2514,13 +2514,13 @@ ul {
   }
   /* line 323, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_menu.scss */
   .navbar-brand img {
-    max-width: 100px;
+    max-width: 70px;
     margin: 0 auto;
     position: absolute;
     left: 0;
     right: 0;
     display: inline-block;
-    top: 10px;
+    top: -22px;
   }
   /* line 333, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_menu.scss */
   .navbar-light .navbar-toggler {
