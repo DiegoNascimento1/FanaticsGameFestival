@@ -18,10 +18,13 @@
                             <div class="collapse navbar-collapse main-menu-item" id="navbarSupportedContent">
                                 <ul class="navbar-nav">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="index.html">Home</a>
+                                        <a class="nav-link" href="<?= base_url('portal_home')?>">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="fighter.html">Blog</a>
+                                        <a class="nav-link" href="<?= base_url('portal_inscricao')?>">inscriçao</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="team.html">team</a>
                                     </li>
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown"
@@ -30,8 +33,8 @@
                                             Eventos
                                         </a>
                                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <a class="dropdown-item" href="blog.html"> 2019</a>
-                                            <a class="dropdown-item" href="single-blog.html">2020</a>
+                                            <a class="dropdown-item" href="<?= base_url('portal_blog')?>"> blog</a>
+                                            <a class="dropdown-item" href="single-blog.html">Single blog</a>
                                         </div>
                                     </li>
                                     <!-- <li class="nav-item dropdown">
