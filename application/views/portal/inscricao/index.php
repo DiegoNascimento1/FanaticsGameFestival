@@ -1,11 +1,28 @@
-<main class= "col-sm-9 offset-sm-3 col-md-10 offset-md-2 pt-3">
-    <h1> inscrição jogadores</h1>
+
+
+<section class="breadcrumb breadcrumb_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb_iner text-center">
+                        <div class="breadcrumb_iner_item">
+                            <h2>Inscrições</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <main class= "col-sm-9 offset-sm-3 col-md-10 offset-md-2 pt-3"> 
+
+    <!--<h1> inscrição jogadores</h1>
  
     <section class="row mt-3 mb-3">
         <div class="col-12 col-sm-12">
             <?= anchor('Portal_home', 'Voltar para pagina principal', ['title' => 'voltar para pagina principal', 'class'=> 'btn btn-primary']) ?>
         </div>    
-    </section>
+    </section>-->
 
 
 

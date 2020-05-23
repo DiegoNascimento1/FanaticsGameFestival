@@ -12,6 +12,7 @@ class Portal_inscricao extends CI_Controller {
         
     }
     public function index(){
+        $dados=[];
         $js['js'] = $this->load->view($this->_base . 'js/main.js', $dados, true);
         $this->load->view('include/portal/cabecalho', $dados);
         $this->load->view($this->_base . 'index', $dados);
