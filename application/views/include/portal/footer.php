@@ -25,3 +25,4 @@
 <script src="<?= base_url('assets/js/mail-script.js')?>"></script>
 <!-- custom js -->
 <script src="<?= base_url('assets/js/custom.js')?>"></script>
+
