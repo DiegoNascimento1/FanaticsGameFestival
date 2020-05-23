@@ -29,11 +29,14 @@ Class Portal_blog extends CI_Controller {
         }
 
        
-
+         
         $js['js'] = $this->load->view($this->_base . 'js/main.js', $dados, true);
         $this->load->view('include/portal/cabecalho', $dados);
         $this->load->view($this->_base . 'index', $dados);
         $this->load->view('include/portal/rodape', $js);
+       // $this->load->models('Blog_model','blog');
+       // $data['blog'] = $this->blog->getBlog();
+       // $this->load->view('index', $data);
     }
 
     /**
