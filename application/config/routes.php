@@ -56,4 +56,5 @@ $route['translate_uri_dashes'] = FALSE;
 
 // ROTAS PORTAL //
 $route['home']          = 'portal_home';
+$route['inscricao']     = 'portal_inscricao';
 $route['contato']       = 'portal_contato';

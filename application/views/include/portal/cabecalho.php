@@ -21,7 +21,7 @@
                                         <a class="nav-link" href="<?= base_url('home')?>">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="<?= base_url('portal_inscricao')?>">inscriçao</a>
+                                        <a class="nav-link" href="<?= base_url('inscricao')?>">Inscrição</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="team.html">team</a>
