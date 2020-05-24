@@ -18,7 +18,7 @@
                             <div class="collapse navbar-collapse main-menu-item" id="navbarSupportedContent">
                                 <ul class="navbar-nav">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="<?= base_url('portal_home')?>">Home</a>
+                                        <a class="nav-link" href="<?= base_url('home')?>">Home</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="<?= base_url('portal_inscricao')?>">inscriçao</a>
@@ -48,7 +48,7 @@
                                         </div>
                                     </li> -->
                                     <li class="nav-item">
-                                        <a class="nav-link" href="contact.html">Contato</a>
+                                        <a class="nav-link" href="<?= base_url('contato')?>">Contato</a>
                                     </li>
                                 </ul>
                             </div>

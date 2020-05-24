@@ -52,3 +52,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'portal_home';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+
+// ROTAS PORTAL //
+$route['home']          = 'portal_home';
+$route['contato']       = 'portal_contato';
