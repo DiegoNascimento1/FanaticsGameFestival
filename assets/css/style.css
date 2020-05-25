@@ -1,5 +1,23 @@
 /**************** extend css start ****************/
 @import url("https://fonts.googleapis.com/css?family=Aclonica|Poppins:300,400,500,600&display=swap");
+
+::-webkit-scrollbar {
+  width: 7px;
+  display: block;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+  display: block;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #b10000;
+  display: block;
+}
+
+
 /* line 2, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_extends.scss */
 .btn_1, .live_stareams .live_stareams_slide .live_stareams_slide_img:after, .Latest_War .Latest_War_text:after, .gallery_part .single_gallery_item .single_gallery_item_iner:after, .footer_part .single_footer_part .mail_part .email_icon {
   background-image: -webkit-gradient(linear, right top, left top, from(#ff0000), color-stop(51%, #c6019a), to(#ff0000));
@@ -261,8 +279,13 @@ h5 {
 }
 
 /* line 129, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_common.scss */
+.menu_fixed img{
+  max-width: 10%;
+  padding: 0;
+} 
 img {
   max-width: 15%;
+  padding: 10px;
 }
 
 /* line 132, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_common.scss */
@@ -5634,20 +5657,19 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 1045, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_elements.scss */
 .form-select .nice-select {
-  border: none;
-  border-radius: 0px;
-  height: 40px;
-  background: #f9f9ff;
-  padding-left: 45px;
-  padding-right: 40px;
+  border: 1px solid #f0e9ff;
+  border-radius: 5px;
+  height: 48px;
+  padding: 6px 18px;
   width: 100%;
 }
 
 /* line 1053, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_elements.scss */
 .form-select .nice-select .list {
   margin-top: 0;
-  border: none;
-  border-radius: 0px;
+  border: 1px solid #ecececb9;
+  background-color: #ecececb9;
+  border-radius: 0 5px;
   box-shadow: none;
   width: 100%;
   padding: 10px 0 10px 0px;
@@ -5675,7 +5697,7 @@ h1, h2, h3, h4, h5, h6 {
 /* line 1071, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_elements.scss */
 .form-select .nice-select .list .option:hover {
   color: #ff0000;
-  background: transparent;
+  background: #68686876;
 }
 
 /* line 1078, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_elements.scss */

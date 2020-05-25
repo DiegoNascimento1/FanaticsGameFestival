@@ -8,6 +8,8 @@
   background-image: linear-gradient(to left, #ff0000 0%, #c6019a 51%, #ff0000 100%);
 }
 
+
+
 /* line 8, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_extends.scss */
 .main_menu .main-menu-item .nav-item a:before {
   background-image: -webkit-gradient(linear, right top, left top, from(#c6019a), to(#ff0000));
