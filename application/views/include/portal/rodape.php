@@ -1,6 +1,6 @@
 <?php defined('BASEPATH') or exit('No direct script access allowed'); ?>
 
-<footer class="footer_part black">
+<footer class="footer_part">
     <div class="copygight_text">
     <div class="container">
         <div class="row align-items-center">

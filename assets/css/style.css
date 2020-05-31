@@ -283,7 +283,8 @@ h5 {
   max-width: 10%;
   padding: 0;
 } 
-img {
+
+.navbar-brand img {
   max-width: 15%;
   padding: 10px;
 }
@@ -2392,7 +2393,7 @@ ul {
 /* line 171, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_menu.scss */
 .menu_fixed {
   position: fixed;
-  z-index: 9999 !important;
+  z-index: 999 !important;
   width: 100%;
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
   top: 0;
